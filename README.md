@@ -1,5 +1,7 @@
 # Portugal SAF-T XML Validator API - Dockerized Python Application
 
+By Edvin Macel
+
 ## Table of Contents
 
 - [Introduction](#introduction)
