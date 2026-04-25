@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<AuditFile xmlns="urn:OECD:StandardAuditFile-Tax:PT_1.04_01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:OECD:StandardAuditFile-Tax:PT_1.04_01 .\SAFTPT1.04_01.xsd"><Header>
+    <AuditFileVersion>1.04_01</AuditFileVersion>
+    <CompanyID>212794108</CompanyID>
+    <TaxRegistrationNumber>212794108</TaxRegistrationNumber>
+    <TaxAccountingBasis>S</TaxAccountingBasis>
+    <CompanyName>COMPANY NAME</CompanyName>
+    <CompanyAddress>
+      <AddressDetail>COMPANY ADDRESS</AddressDetail>
+      <City>CITY</City>
+      <PostalCode>4500-392</PostalCode>
+      <Country>PT</Country>
+    </CompanyAddress>
+    <FiscalYear>2026</FiscalYear>
+    <StartDate>2026-03-01</StartDate>
+    <EndDate>2026-03-31</EndDate>
+    <CurrencyCode>EUR</CurrencyCode>
+    <DateCreated>2026-03-30</DateCreated>
+    <TaxEntity>Sede</TaxEntity>
+    <ProductCompanyTaxID>94-3310471</ProductCompanyTaxID>
+    <SoftwareCertificateNumber>1691</SoftwareCertificateNumber>
+    <ProductID>NetSuite OneWorld/NetSuite Inc</ProductID>
+    <ProductVersion>2026.1</ProductVersion>
+  </Header>
+  <MasterFiles><Customer><CustomerID>518519104</CustomerID>
+      <AccountID>Desconhecido</AccountID>
+      <CustomerTaxID>518519104</CustomerTaxID>
+      <CompanyName>COMPANY NAME</CompanyName>
+      <BillingAddress>
+        <AddressDetail>COMPANY ADDRESS</AddressDetail>
+        <City>CITY</City>
+        <PostalCode>1250-068</PostalCode>
+        <Country>PT</Country>
+      </BillingAddress>
+      <Email>accounting@email.com</Email>
+      <SelfBillingIndicator>1</SelfBillingIndicator>
+    </Customer><Product>
+      <ProductType>S</ProductType>
+      <ProductCode>742010</ProductCode>
+      <ProductDescription>Parcel services (VShop)</ProductDescription>
+      <ProductNumberCode>742010</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>S</ProductType>
+      <ProductCode>741005</ProductCode>
+      <ProductDescription>Lockers space rent (individual shops)</ProductDescription>
+      <ProductNumberCode>741005</ProductNumberCode>
+    </Product>
+    <Product>
+      <ProductType>S</ProductType>
+      <ProductCode>741003</ProductCode>
+      <ProductDescription>Lockers space rent</ProductDescription>
+      <ProductNumberCode>741003</ProductNumberCode>
+    </Product>
+    <TaxTable>
+      <TaxTableEntry>
+        <TaxType>IVA</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>NOR</TaxCode>
+        <Description>PT - 23% - standard rate - Standard rate</Description>
+        <TaxPercentage>23.00</TaxPercentage>
+      </TaxTableEntry>
+      <TaxTableEntry>
+        <TaxType>NS</TaxType>
+        <TaxCountryRegion>PT</TaxCountryRegion>
+        <TaxCode>NS</TaxCode>
+        <Description>PT_NO_VAT - Zero rate</Description>
+        <TaxPercentage>0.00</TaxPercentage>
+      </TaxTableEntry>
+    </TaxTable>
+  </MasterFiles><SourceDocuments><SalesInvoices><NumberOfEntries>1</NumberOfEntries><TotalDebit>0.00</TotalDebit><TotalCredit>240.00</TotalCredit><Invoice>
+        <InvoiceNo>FT PT-SB-PT212794108/000000002</InvoiceNo>
+        <ATCUD>J6FXBG7V-000000002</ATCUD>
+        <DocumentStatus>
+          <InvoiceStatus>S</InvoiceStatus>
+          <InvoiceStatusDate>2026-03-18T20:10:07</InvoiceStatusDate>
+          <SourceID>Edvin Macek</SourceID>
+          <SourceBilling>P</SourceBilling>
+        </DocumentStatus>
+        <Hash>MjuBmUZcjJtXtlcyTcQHM6ycUX7do9U/U4Gge8CvbE4qbatLaUZt2HbLzl2eLUZWoZce6hCACc4HkrfRFfgl5cYpGEXnQ5VPTQq/YQAyBqNjmruOdSgQVBraaRUNzELsdJ3bz7cW4PHwroiP/zHi2whLL3nrRjEI7CJX3NaaNGc=</Hash>
+        <HashControl>2</HashControl>
+        <InvoiceDate>2026-03-17</InvoiceDate>
+        <InvoiceType>FT</InvoiceType>
+        <SpecialRegimes>
+          <SelfBillingIndicator>1</SelfBillingIndicator>
+          <CashVATSchemeIndicator>0</CashVATSchemeIndicator>
+          <ThirdPartiesBillingIndicator>0</ThirdPartiesBillingIndicator>
+        </SpecialRegimes>
+        <SourceID>Edvin Macel</SourceID>
+        <SystemEntryDate>2026-03-18T20:10:07</SystemEntryDate>
+        <TransactionID>2026-03-17 1 PT5612</TransactionID>
+        <CustomerID>518519104</CustomerID>
+        <Line>
+          <LineNumber>1</LineNumber>
+          <ProductCode>741005</ProductCode>
+          <ProductDescription>Lockers space rent (individual shops)</ProductDescription>
+          <Quantity>1</Quantity>
+          <UnitOfMeasure>unit</UnitOfMeasure>
+          <UnitPrice>240.00</UnitPrice>
+          <TaxPointDate>2026-03-17</TaxPointDate>
+          <Description>Colocação de Cacifo no período 2026-01-01 - 2026-03-31</Description>
+          <CreditAmount>240.00</CreditAmount>
+          <Tax>
+            <TaxType>IVA</TaxType>
+            <TaxCountryRegion>PT</TaxCountryRegion>
+            <TaxCode>NOR</TaxCode>
+            <TaxPercentage>23.00</TaxPercentage>
+          </Tax>
+        </Line>
+        <DocumentTotals>
+          <TaxPayable>55.20</TaxPayable>
+          <NetTotal>240.00</NetTotal>
+          <GrossTotal>295.20</GrossTotal>
+        </DocumentTotals>
+      </Invoice>
+    </SalesInvoices><MovementOfGoods><NumberOfMovementLines>0</NumberOfMovementLines><TotalQuantityIssued>0</TotalQuantityIssued></MovementOfGoods><WorkingDocuments><NumberOfEntries>0</NumberOfEntries><TotalDebit>0.00</TotalDebit><TotalCredit>0.00</TotalCredit></WorkingDocuments><Payments><NumberOfEntries>0</NumberOfEntries><TotalDebit>0.00</TotalDebit><TotalCredit>0.00</TotalCredit></Payments></SourceDocuments></AuditFile>
