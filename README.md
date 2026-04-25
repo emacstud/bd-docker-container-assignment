@@ -1,5 +1,48 @@
 # Portugal SAF-T XML Validator API - Dockerized Python Application
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Sample XML files for testing](#sample-xml-files-for-testing)
+- [Project Overview](#project-overview)
+- [How to run and test the published Docker image](#how-to-run-and-test-the-published-docker-image)
+  - [XML samples](#xml-samples)
+    - [Test the `/validate` endpoint with the valid XML file](#test-the-validate-endpoint-with-the-valid-xml-file)
+    - [Test the `/validate` endpoint with the invalid XML file](#test-the-validate-endpoint-with-the-invalid-xml-file)
+  - [Stop and remove the container after testing](#stop-and-remove-the-container-after-testing)
+  - [Notes](#notes)
+- [Setting up a Docker environment](#setting-up-a-docker-environment)
+- [Dockerfile](#dockerfile)
+  - [Dockerfile used in this project](#dockerfile-used-in-this-project)
+  - [Explanation of the Dockerfile](#explanation-of-the-dockerfile)
+    - [1. Select the base image](#1-select-the-base-image)
+    - [2. Define the working directory](#2-define-the-working-directory)
+    - [3. Define environment variables](#3-define-environment-variables)
+    - [4. Copy the dependency file first](#4-copy-the-dependency-file-first)
+    - [5. Install the Python dependencies](#5-install-the-python-dependencies)
+    - [6. Copy the application source files](#6-copy-the-application-source-files)
+    - [7. Document the application port](#7-document-the-application-port)
+    - [8. Define the container startup command](#8-define-the-container-startup-command)
+  - [Result of writing a Dockerfile](#result-of-writing-a-dockerfile)
+- [Build the Docker image](#build-the-docker-image)
+  - [Build command used](#build-command-used)
+  - [What happened during the build](#what-happened-during-the-build)
+  - [Verify that the image was created](#verify-that-the-image-was-created)
+  - [Result of building the Docker image](#result-of-building-the-docker-image)
+- [Test the Docker image](#test-the-docker-image)
+  - [Start a container from the image](#start-a-container-from-the-image)
+  - [Check whether the container is running](#check-whether-the-container-is-running)
+  - [Inspect application logs](#inspect-application-logs)
+  - [Test the health endpoint](#test-the-health-endpoint)
+  - [Test the validation endpoint with XML content](#test-the-validation-endpoint-with-xml-content)
+  - [Stop the container after testing](#stop-the-container-after-testing)
+  - [Result of testing the Docker image](#result-of-testing-the-docker-image)
+- [Push the Docker image to a container registry](#push-the-docker-image-to-a-container-registry)
+  - [Create access to the container registry](#create-access-to-the-container-registry)
+  - [Log in to Docker Hub](#log-in-to-docker-hub)
+  - [Building and pushing the image to Docker Hub](#building-and-pushing-the-image-to-docker-hub)
+  - [Result of pushing the Docker image to a container registry](#result-of-pushing-the-docker-image-to-a-container-registry)
+
 ## Introduction
 
 This project was developed as part of the task **"Creating a Python Code and Packaging it into a Docker Container."**
@@ -106,7 +149,7 @@ Expected response:
 {"status":"ok"}
 ```
 
-### Sample XML files for testing
+### XML samples
 
 Two sample XML files are included in the `samples/` directory of this repository for testing the API:
 
